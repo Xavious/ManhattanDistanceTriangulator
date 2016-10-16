@@ -14,7 +14,6 @@ def GetPingers():
 def GeneratePingSectors(pingers):
 	sector_groups = []
 	for pinger in pingers:
-		sectors = []
 		s = set()
 		for i in range(0, pinger['z']):
 			s.add((pinger['x'] + pinger['z'] - i, pinger['y'] + i))
